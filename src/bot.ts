@@ -1,6 +1,6 @@
 import { Bot } from "grammy";
 
-const font = "ᴏ̨ᴡᴇʀᴛʏᴜɪᴏᴘᴀꜱᴅꜰɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ";
+const font = "Qᴡᴇʀᴛʏᴜɪᴏᴘᴀꜱᴅꜰɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ";
 const defaultFont = "qwertyuiopasdfghjklzxcvbnm";
 const bot = new Bot(process.env["BOT_TOKEN"]!);
 
