@@ -1,0 +1,19 @@
+{
+    "name": "first-server",
+    "module": "src/bot.ts",
+    "type": "module",
+    "scripts": {
+        "start": "npm run build && node dist/bot.js",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "peerDependencies": {},
+    "dependencies": {
+        "commander": "^12.1.0",
+        "node-id3": "^0.2.6",
+        "grammy": "^1.21.1",
+        "axios": "^1.6.7"
+    }
+}

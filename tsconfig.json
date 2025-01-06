@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        // Enable latest features
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "outDir": "dist",
+        "allowJs": true,
+
+        // Bundler mode
+        "moduleResolution": "node",
+        "verbatimModuleSyntax": true,
+        "noEmit": false,
+
+        // Best practices
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+
+        // Some stricter flags (disabled by default)
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noPropertyAccessFromIndexSignature": true
+    }
+}
