@@ -2,7 +2,7 @@ import { Bot } from "grammy";
 
 const font = "ᴏ̨ᴡᴇʀᴛʏᴜɪᴏᴘᴀꜱᴅꜰɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ";
 const defaultFont = "qwertyuiopasdfghjklzxcvbnm";
-const bot = new Bot("7627793836:AAFXxBzho_5VPD5APRRvil2JDeRaCyjkxHE");
+const bot = new Bot(process.env["BOT_TOKEN"]!);
 
 // Handle text messages for tag input
 bot.on("message:text", async (ctx) => {
