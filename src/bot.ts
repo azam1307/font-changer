@@ -25,5 +25,24 @@ function convertToFancyFont(text: string): string {
         .join("");
 }
 
+// Handle inline queries
+bot.on("inline_query", async (ctx) => {
+    const query = ctx.inlineQuery?.query;
+    if (!query) return;
+
+    const formattedText = convertToFancyFont(query);
+
+    await ctx.answerInlineQuery([
+        {
+            type: "article",
+            id: "1",
+            title: formattedText,
+            input_message_content: {
+                message_text: formattedText,
+            },
+        },
+    ]);
+});
+
 // Start the bot
 bot.start();
